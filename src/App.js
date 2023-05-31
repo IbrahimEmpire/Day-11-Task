@@ -1,16 +1,16 @@
 
 
 import './App.css';
-import { Book } from './Book';
-import { AddBooks } from './BookAdd';
+import { Book } from './Components/Book';
+import { AddBooks } from './Components/BookAdd';
 import { BookDetails } from './BookDetails';
-import { Home } from './Home';
+import { Home } from './Template/Home';
 import { Route, Routes } from 'react-router-dom';
-import { Tamil } from './Tamil';
-import { Editmovie } from './BookEdit';
-import { English } from './English';
-import { Members } from './Members';
-import { HomePage } from './HomePage';
+import { Tamil } from './Components/Tamil';
+import { Editmovie } from './Components/BookEdit';
+import { English } from './Components/English';
+import { Members } from './SubData/Members';
+import { HomePage } from './Components/HomePage';
 
 
 function App() {

@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Home } from './Home';
+import { Home } from '../Template/Home';
 
 
 

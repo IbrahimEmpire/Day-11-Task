@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { TotalMovie } from './App';
+import { TotalMovie } from '../App';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import TextField from '@mui/material/TextField';
@@ -11,8 +11,8 @@ import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
 
 import EditIcon from '@mui/icons-material/Edit';
-import { Home } from './Home';
-import {english} from './tamildata'
+import { Home } from '../Template/Home';
+import {english} from '../tamildata'
 
 
 export function English() {

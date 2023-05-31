@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { useNavigate, useParams } from 'react-router-dom';
-import { Home } from './Home';
+import { Home } from '../Template/Home';
 
 export const Editmovie = () => {
   const [movie, setMovie] = useState(null)

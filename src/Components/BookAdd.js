@@ -2,7 +2,7 @@ import { Button, TextField } from '@mui/material'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import { Home } from './Home';
+import { Home } from '../Template/Home';
 import {  useFormik } from 'formik';
 import * as yup from 'yup'
 

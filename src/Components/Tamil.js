@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { TotalMovie } from './App';
+
 import { Navigate, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import TextField from '@mui/material/TextField';
@@ -11,21 +11,14 @@ import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
-import { Home } from './Home';
+import { Home } from '../Template/Home';
+import {tamil} from '../tamildata'
 
 
-export function Book() {
-const [data, setData] = useState([])
+export function Tamil() {
+const [data, setData] = useState(tamil)
 const navigate = useNavigate()
-const getmovie = ()=>{
-  fetch(`https://646dbe919c677e23218a55fa.mockapi.io/books`,{method: "GET"})
-  .then((res)=>res.json())
-  .then((res)=>setData(res))
-}
 
-  useEffect(()=>{
-    getmovie()
-      },[])
 
   return (
     <Home>
@@ -34,18 +27,9 @@ const getmovie = ()=>{
      
       <div className='movie-list'>
       {data.map((e, i) => (
-        <Movie key={i} data={e} id={e.id} dlt ={<IconButton aria-label="delete"
-        onClick={()=>{
-          fetch(`https://646dbe919c677e23218a55fa.mockapi.io/books/${e.id}`,{method: "DELETE"})
-          .then(()=> getmovie())
-         
-        }}
-        >
-        <DeleteIcon color='error'/>
-        
-      </IconButton>}
+        <Movie key={i} data={e} id={e.id} 
       editbtn ={<IconButton aria-label="delete"
-      onClick={()=> navigate(`/book/edit/${e.id}`) }
+      onClick={()=> navigate(`/movie/edit/${e.id}`) }
       >
       <EditIcon color='primary'/>
       
@@ -69,6 +53,8 @@ function Movie({ data ,id,dlt,editbtn}) {
     display: show ? "none" : "block"
   };
 
+  
+
   return (
     <div className='movie-container'>
       <img className='movie-poster' src={data.poster} alt='movie poster' />
@@ -81,7 +67,8 @@ function Movie({ data ,id,dlt,editbtn}) {
       <IconButton color="primary" onClick={() => setShow(!show)}>{show ? <ExpandLessIcon/> : <ExpandMoreIcon/>}</IconButton>
       <IconButton onClick={() => navgigate('/view/'+id)}><InfoIcon/></IconButton>
       {!show ? <p className='movie-summary'>{data.summary}</p> : ""}
-      {dlt} {editbtn} 
+     
+      {editbtn} 
     </div>
   );
 }
