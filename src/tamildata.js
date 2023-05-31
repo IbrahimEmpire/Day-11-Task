@@ -1,7 +1,7 @@
 export const tamil = [
     {
         "id": "11",
-        "name": "Charlotte's web",
+        "name": "Bhimrao Ramji Ambedkar Book",
         "poster": "https://th.bing.com/th/id/OIP.gGqVFLiDPIHb3YU9lOMNJwAAAA?pid=ImgDet&rs=1",
         "rating": 8.8,
         "video": "https://www.youtube.com/embed/PU2r9tDwZ1M",
