@@ -1,0 +1,125 @@
+.App {
+  /* text-align: center; */
+}
+.nav-bar{
+  background-color: rgb(33, 159, 194);
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+.nav-btn{
+  margin-top: 10px;
+  margin-left: 5px;
+  
+}
+
+.movie-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.movie-container{
+  width: 250px;
+  margin: 20px;
+  border-radius: 20px;
+
+}
+.movie-poster{
+  width: 200px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.movie-name{
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.movie-detail-container{
+  width: 100%;
+}
+.movie-detail-summary{
+  font-size: 15px;
+  width: 80%;
+}
+.movie-detail-name{
+  font-size: 30px;
+}
+.movie-detail-rating{
+  font-size: 20px;
+}
+.add-movie{
+ display: flex;
+ flex-direction: column;
+  margin: 20px;
+  width: 500px;
+
+  }
+  .book-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .book-site-con{
+    margin: 20px;
+  }
+  @media (max-width: 1001px){
+    .add-book-img{
+      width: 100px;
+      align-items: center;
+      margin-left: 200px;
+    }
+  
+  }
+  .edit-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  .edit{
+   
+    display: flex;
+    justify-content: center;
+  }
+  .main-btn{
+    border: none;
+  }
+  .main-btn:hover{
+    border: 1px solid blue;
+    border-radius: 20px;
+  }
+  .member-container{
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    border: 2px solid lightblue;
+    margin: 20px;
+    border-radius: 20px;
+   background-color: #EE7754;
+  }
+  .img-con{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+   
+    box-sizing: border-box;
+   
+  }
+  .T-carts{
+    display: flex;
+    flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 20px;    
+      background-color: #CFA7ED;
+      margin: 0;
+  }
+  .home-page img{
+    width: 16.66666666666667%;
+    height: 736.2px;
+  }
+  .search-con{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+  }
